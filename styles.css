@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(163, 27, 27);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden; /* 横スクロールを防止 */
+    width: 100vw; /* ビュー幅を100%に */
+}
+
+h1{
+    font-family: "MS Mincho";
+}
+
+h4{
+    font-family: "MS Mincho";
+}
+
+
+.result-container {
+    background: white;
+    color: black;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.main-result {
+    text-align: center;
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+    font-family: "MS Mincho";
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: "MS Mincho";
+    font-weight: bold;
+    
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.btn {
+    
+    padding: 10px 40px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "MS Mincho";
+    
+    
+}
+
+.btn:hover {
+    background-color: #c9302c;
+}
+
+.left-btn-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.left-btn {
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "MS Mincho";
+}
+
+.left-btn:hover {
+    background-color: #c9302c;
+}
+
+
+
+
+
+
+
+/* おみくじを引くアニメーション*/
+.lottery-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 10;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    background-color: #f0df82;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #ff0000;
+    font-family: "MS Mincho";
+    animation: rotateCard 2s infinite; /* 回転アニメ */
+}
+
+/* カードが回転する */
+@keyframes rotateCard {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes infinity-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+      to {
+      transform: translateX(-100%);
+    }
+    }
+
+    .scroll-infinity__wrap {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        z-index: 1;
+        margin-top: 200px;
+    }
+    
+    .scroll-infinity__list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .scroll-infinity__list--left {
+        animation: infinity-scroll-left 30s infinite linear;
+    }
+    
+    .scroll-infinity__item {
+        width: calc(100vw / 6);
+    }
+    
+    .scroll-infinity__item > img {
+        width: 100%;
+    }
+    
+    @keyframes infinity-scroll-left {
+        0% {
+            transform: translateX(0);
+        }
+        20% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+
+    .miko-container {
+        position: absolute;
+        top: 30%;
+        right: 26%;
+      
+    }
+    
+    .miko-image {
+        width: 150px; 
+        height: 100px;
+      
+    }
+    
+
+    /* iPhone 14の縦向き対応 */
+@media (max-width: 390px) {
+    body {
+        font-size: 14px; /* 文字サイズの調整 */
+    }
+
+    .result-container {
+        width: 90%; /* 幅を小さく調整 */
+        padding: 15px; /* パディングを調整 */
+    }
+
+    .header h1 {
+        font-size: 1.5rem; /* 見出しの文字サイズ調整 */
+    }
+
+    .main-result {
+        font-size: 1.5rem; /* 結果の文字サイズ調整 */
+    }
+
+    .description {
+        font-size: 1rem; /* 説明文の文字サイズ調整 */
+    }
+
+    .image-container {
+        flex-direction: column; /* 画像を縦並びに変更 */
+        gap: 10px; /* ギャップを小さく調整 */
+    }
+
+    .image-container img {
+        width: 200px; /* 画像の幅調整 */
+        height: 120px; /* 画像の高さ調整 */
+    }
+
+    .btn {
+        padding: 8px 30px; /* ボタンのサイズ調整 */
+        font-size: 0.9rem; /* ボタンの文字サイズ調整 */
+    }
+
+    .left-btn-container {
+        top: 10px;
+        left: 10px;
+    }
+
+    .left-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* おみくじのカードのサイズ調整 */
+    .card {
+        width: 120px;
+        height: 160px;
+        font-size: 1.5rem;
+    }
+
+    .miko-container {
+        top: 20%;
+        right: 10%;
+    }
+
+    .miko-image {
+        width: 120px;
+        height: 80px;
+    }
+}

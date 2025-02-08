@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(163, 27, 27);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden; /* 横スクロールを防止 */
+    width: 100vw; /* ビュー幅を100%に */
+}
+
+h1{
+    font-family: "MS Mincho";
+}
+
+h4{
+    font-family: "MS Mincho";
+}
+
+
+.result-container {
+    background: rgb(231, 231, 231);
+    color: black;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.main-result {
+    text-align: center;
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+    font-family: "MS Mincho";
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: "MS Mincho";
+    font-weight: bold;
+    
+}
+.salary {/*年収のCSS*/
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    font-weight: bold;
+    color: red; 
+    font-family: "MS Mincho";
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.btn {
+    
+    padding: 10px 40px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "MS Mincho";
+    
+    
+}
+
+.btn:hover {
+    background-color: #c9302c;
+}
+
+.left-btn-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.left-btn {
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "MS Mincho";
+}
+
+.left-btn:hover {
+    background-color: #c9302c;
+}
+
+
