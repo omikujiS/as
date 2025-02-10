@@ -155,7 +155,7 @@ function startLottery() {
         // アニメを非表示にして結果ページに遷移
         lotteryAnimation.style.display = 'none';
         window.location.href = "result.html";
-    }, 2000); // 2秒の遅延で遷移
+    }, 3000); // 2秒の遅延で遷移
 }
 
 function leftButtonClick(){
