@@ -12,7 +12,14 @@ body {
     overflow-x: hidden; /* 横スクロールを防止 */
     width: 100vw; /* ビュー幅を100%に */
 }
-
+main{
+    width: 900px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 0;
+    float: none;
+    text-align: center;
+}
 h1 {
     margin: 20px 0;
     font-size: 2rem;
@@ -138,7 +145,7 @@ h1 {
 }
 
 .right-arrow {
-    right: 45px; /* 位置を少し左に修正 */
+    right: 30px; /* 位置を少し左に修正 */
 }
 
 .job-left-arrow {
@@ -146,7 +153,7 @@ h1 {
 }
 
 .job-right-arrow {
-    right: 45px; /* 位置を少し左に修正 */
+    right: 30px; /* 位置を少し左に修正 */
 }
 .arrow-button:disabled {
     background-color: grey;
@@ -214,6 +221,12 @@ h1 {
 }
 
 @media(max-width:767px){
-    
+    main{
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 0;
+        float: none;
+        text-align: center;
+    }
 }
-
